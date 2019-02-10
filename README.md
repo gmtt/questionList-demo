@@ -1,3 +1,3 @@
 ## Demo
 
-[link to demo](https://gmtt.github.io/questionList-demo)
+[link to demo](https://gmtt.github.io/questionList-demo/)
