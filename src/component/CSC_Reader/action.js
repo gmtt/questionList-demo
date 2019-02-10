@@ -6,7 +6,8 @@ export const addQuestions = data => {
         for (let index in info){
             entity[keys[index]] = info[index];
         }
-        entities.push(entity);
+        if (entity.hasOwnProperty('title'))
+            entities.push(entity);
     }
 
     return {
