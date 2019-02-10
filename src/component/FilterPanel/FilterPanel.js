@@ -1,5 +1,5 @@
 import React from 'react';
-import {Paper} from "@material-ui/core";
+import {Paper, Typography} from "@material-ui/core";
 import FilterChip from "./FilterChip";
 import FilterAdd from "./FilterAdd";
 import * as PropTypes from 'prop-types'
@@ -9,6 +9,7 @@ import {removeCategory, removeFilter} from "./action";
 function FilterPanel(props) {
     return (
         <Paper>
+            <Typography>Filter Panel</Typography>
             {props.filters.map(f=>{
                 return(
                     <FilterChip

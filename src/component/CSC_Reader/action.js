@@ -6,6 +6,8 @@ export const addQuestions = data => {
         for (let index in info){
             entity[keys[index]] = info[index];
         }
+        entity.start_date = Date.parse(entity.start_date);
+        entity.end_date = Date.parse(entity.end_date);
         if (entity.hasOwnProperty('title'))
             entities.push(entity);
     }

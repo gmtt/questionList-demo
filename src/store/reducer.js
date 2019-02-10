@@ -39,6 +39,16 @@ const questions = (state = {
                 ...state,
                 category: state.category.filter(c => c !== action.name)
             };
+        case 'toggle_sort':
+            return {
+                ...state,
+                sortByTime: state.sortByTime===1?-1:state.sortByTime+1
+            };
+        case 'toggle_group':
+            return {
+                ...state,
+                groupByCategory: !state.groupByCategory
+            }
         default:
             return state;
     }
